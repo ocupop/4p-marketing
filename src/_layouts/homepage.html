@@ -10,7 +10,9 @@ layout: default
           <p>Here is a list of available targeted pages to choose from.</p>
           <ul class="list-group">
             {% for target in site.targets %}
-              <li class="list-group-item">{{ target.name }}</li>
+              <li class="list-group-item">
+                <a href="{{ target.url }}">{{ target.name }}</a>
+              </li>
             {% endfor %}
           </ul>
         </div>

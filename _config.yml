@@ -4,6 +4,8 @@ email: dev@ocupop.com
 url: "http://client_url.com"
 permalink: /:title
 
+root_url: https://4pfoods.com
+
 # Social sharing
 description:
 socialshare:
@@ -30,3 +32,5 @@ source: src
 
 plugins:
   - jekyll-sitemap
+
+placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
