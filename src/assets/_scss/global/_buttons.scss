@@ -4,5 +4,9 @@
   padding: .5rem 1.25rem;
   text-transform: uppercase;
   color: $white;
-
+  border: 0;
+  @include transition(.3s);
+  &:hover {
+    color: $white;
+  }
 }
