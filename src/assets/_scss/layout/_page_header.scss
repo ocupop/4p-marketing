@@ -1,4 +1,11 @@
 #page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: 0 0 5px rgba($black, 0.1);
+  z-index: 99;
   .navbar-brand {
     img {
       height: 32px;
