@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-
+{% assign target = page %}
 <section id="introduction" class="bg-primary">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
-        <h1 class="editable">Healthy, fresh food, direct to your office</h1>
-        <div class="editable">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum, adipisci fugiat molestiae tempore reprehenderit, neque tempora error, excepturi ullam amet eligendi recusandae. Ullam culpa sit veniam voluptas. Ipsam, nostrum!</p>
-          <p>At 4p, everyone looks forward to delivery day!</p>
-        </div>
-        <p><a href="#contact" calss="btn btn-light text-primary">Learn More</a></p>
+      <div class="col-12 col-md-8 text-white text-center">
+        <h2>{{ target.sections[0].tagline }}</h2>
+        {{ target.sections[0].summary_html }}
+        <p class="mt-5"><a href="#contact" class="btn btn-light text-primary">Learn More</a></p>
       </div>
     </div>
   </div>
@@ -23,22 +20,22 @@ layout: default
       <div class="col-12 col-md-4">
         <img src="{{ site.placeholder_image }}" alt="" class="img-fluid editable">
         <h3 class="editable">Custom Order Options</h3>
-        <p class="editable"></p>
+        <p class="editable">Produce, dairy, or meat...feeding a family of 6 or cooking for one...we have the right delivery for every employee.</p>
       </div>
       <div class="col-12 col-md-4">
         <img src="{{ site.placeholder_image }}" alt="" class="img-fluid editable">
-        <h3 class="editable">Custom Order Options</h3>
-        <p class="editable"></p>
+        <h3 class="editable">Convenient drop-off location</h3>
+        <p class="editable">With our delivery drop-off right to your door, you’ll save your employees money and time.</p>
       </div>
       <div class="col-12 col-md-4">
         <img src="{{ site.placeholder_image }}" alt="" class="img-fluid editable">
-        <h3 class="editable">Custom Order Options</h3>
-        <p class="editable"></p>
+        <h3 class="editable">Farm-fresh, seasonal food with purpose</h3>
+        <p class="editable">We work with more than 200 farmers for the best quality and variety. We’ll even show your employees how to use it all.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-12 border-top">
-        <p class="editable"><em>Want to learn more about how 4P works?<br>Checkout our video</em></p>
+        <p class="editable"><em>Want to learn more about how 4P works?<br>Checkout our <a href="#video">video</a></em></p>
       </div>
     </div>
   </div>
@@ -48,10 +45,8 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-10">
-        <h2 class="editable">Give you employees the gift of health -- for free!</h2>
-        <div class="editable">
-          <p>As a health...</p>
-        </div>
+        <h2>{{ target.sections[1].tagline }}</h2>
+        {{ target.sections[1].summary_html }}
         <p>
           <a href="#contact" class="btn btn-info">Get started</a>
         </p>
@@ -60,7 +55,7 @@ layout: default
   </div>
 </section>
 
-<section class="bg-primary">
+<section class="bg-primary pt-0">
   <div class="row no-gutters">
     <div class="col">
       <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
@@ -76,8 +71,8 @@ layout: default
     <div class="row">
       <div class="col-12">
         <blockquote class="blockquote">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta, obcaecati reprehenderit laboriosam veritatis temporibus quaerat quos suscipit sit odio unde. Eveniet quaerat omnis consequatur veritatis enim explicabo rem at!</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          <p>{{ target.testimonial.quote }}</p>
+          <footer class="blockquote-footer">{{ target.testimonial.author }} <cite title="{{ target.testimonial.source }}">{{ target.testimonial.source }}</cite></footer>
         </blockquote>
       </div>
     </div>
@@ -85,6 +80,64 @@ layout: default
 </section>
 
 <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Who else uses 4P Foods?</h2>
+        <p>Other companies are already recognizing all the positive impacts that 4P brings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>How 4P Foods works</h2>
+        Video Embed
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Who else are you helping by choosing 4p Foods?</h2>
+        <p>The 4P mission is about more than just food. It’s about making a lasting impact on our community, our economy, and our environment. We make it easy for people and companies to give back.</p>
+        <div class="card-deck">
+          <div class="card">
+            <img class="rounded-circle img-fluid" src="{{ site.placeholder_image }}" alt="Alternate">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="rounded-circle img-fluid" src="{{ site.placeholder_image }}" alt="Alternate">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="rounded-circle img-fluid" src="{{ site.placeholder_image }}" alt="Alternate">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="">
   <div class="container">
     <div class="row">
       <div class="col-12">
