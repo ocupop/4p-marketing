@@ -18,9 +18,9 @@
 
 
 // Responsive containers
-.container-4x3 {
+.container-map {
   height: 0;
-  padding-top: 60%;
+  padding-top: 40%;
   width: 100%;
   position: relative;
   iframe {
@@ -47,6 +47,9 @@
   }
   &.aspect-16x9 {
     padding-top: 56.25%;
+  }
+  &.aspect-hero {
+    padding-top: 36.25%;
   }
 }
 
