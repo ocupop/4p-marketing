@@ -3,7 +3,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Open Sans']
+    families: ['Montserrat:100,300,400','Spectral:400,400i,500i,600,600i']
   },
   // typekit: { id: '' },
   loading: function() {
