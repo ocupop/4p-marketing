@@ -1,0 +1,106 @@
+---
+layout: target
+name: Direct to Consumer
+testimonial:
+  quote: >-
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit, sed diam nonummy
+  author: Adelina Sanford
+  source: HR Manager for Brookings
+calendly_url:
+---
+
+
+{% contentfor target_overview no-convert %}
+<section id="overview" class="bg-primary">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-white text-center">
+        <h2 class="mb-5 editable">Healthy, fresh food,<br>Direct to your office</h2>
+        <div class="mb-5 editable">
+          <p>Connect your employees with delicious, local food, delivered for free, right to work. It can be hard to keep fresh food on the table, but at 4P we make it easy with weekly deliveries straight from local family farms. Give your employees a valuable benefit, a firsthand look at your company’s commitment to the community, and—with our custom order options—exactly the food they want.</p>
+          <p>At 4P, everyone looks forward to delivery day!</p>
+        </div>
+        <p><a href="#contact" class="btn btn-light text-primary">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcontentfor %}
+
+
+{% contentfor target_scoop no-convert %}
+<section id="scoop" class="bg-cream text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-7">
+        <h2 class="mb-5 editable">Give your employees the gift of health &mdash; for free!</h2>
+        <div class="mb-5 editable">
+          <p>As a health and wellness perk, 4P can help you recruit new employees and keep your current staff healthy and happy. It’s also an excellent addition to your sustainability initiatives, with environmental and social implications that any company can be proud of.</p>
+        </div>
+        <p>
+          <a href="#contact" class="btn btn-info">Get started</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-0">
+  <div class="row no-gutters">
+    <div class="col">
+      <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+    </div>
+    <div class="col">
+      <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+    </div>
+    <div class="col">
+      <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+    </div>
+  </div>
+</section>
+{% endcontentfor %}
+
+{% contentfor target_credibility no-convert %}
+<section id="credibility" class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-3 editable">Who else uses 4P Foods?</h2>
+        <div class="editable">
+          <p>Other companies are already recognizing all the positive impacts that 4P brings.</p>
+        </div>
+        <div class="d-flex justify-content-around align-items-center">
+          <div class="m-3"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid"></div>
+          <div class="m-3"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid"></div>
+          <div class="m-3"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcontentfor %}
+
+{% contentfor target_next_step no-convert %}
+<section id="next-step" class="">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="mb-3 editable">Want your employees to get the full story? We can help you tell it.</h2>
+        <div class="mb-5 editable">
+          <p>Just schedule a meet-and-greet session with a member of our team. We’ll come out to your office and share our story directly with your staff. They’ll get the whole picture, and you’ll get them on board. Use the calendar below to schedule, or just contact us directly at <a href="mailto:info@4pfoods.com">info@4pfoods.com</a> or 703.732.6664.</p>
+        </div>
+      </div>
+    </div>
+    {% if target.calendly_url %}
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">  
+        <div class="calendly-inline-widget" data-url="{{ page.calendly_url }}" style="min-width:320px;height:580px;filter: hue-rotate(236deg) saturate(1.4);"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endcontentfor %}
