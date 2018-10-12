@@ -9,13 +9,19 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="nav navbar-nav mx-auto">
+        <ul class="nav navbar-nav mx-auto border-top border-bottom">
           <li class="nav-item"><a href="#how-it-works" class="nav-link">How it works</a></li>
           <li class="nav-item"><a href="#our-impact" class="nav-link">Our Impact</a></li>
           <li class="nav-item"><a href="#next-step" class="nav-link">Contact</a></li>
         </ul>
-        <ul class="navbar-nav float-right">
-          <li class="nav-item"><a href="#next-step" class="btn btn-primary">Get Started</a></li>
+        <ul class="navbar-nav float-md-right mt-4 mt-md-0">
+          <li class="nav-item">
+            {% if page.primary_cta == "signup" %}
+              <a href="{{ site.signup_url }}" class="btn btn-primary">Sign-up</a>
+            {% else %}
+              <a href="#next-step" class="btn btn-primary">Get Started</a>
+            {% endif %}
+          </li>
         </ul>
       </div>
     </nav>

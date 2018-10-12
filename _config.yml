@@ -5,6 +5,8 @@ url: "http://client_url.com"
 permalink: /:title
 
 root_url: https://4pfoods.com
+signup_url: http://4pfoods.com/get-a-bag/
+contact_url: http://4pfoods.com/contact/
 
 # Social sharing
 description:

@@ -12,6 +12,12 @@
       margin: 8px 0;
     }
   }
+  .border-top,
+  .border-bottom {
+    @include media-breakpoint-up(md) {
+      border: 0 !important;
+    }
+  }
 }
 
 #primarynav {
