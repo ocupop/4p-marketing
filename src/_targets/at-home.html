@@ -1,14 +1,18 @@
 ---
 layout: target
 name: At Home
-testimonial:
-  quote: >-
-    A fantastic CSA with a great mix of interesting veggies along with regular
-    staples. Great quality and value! Plus they suggest recipes every week for
-    the shares delivered. The ability to pause a delivery if you're traveling is
-    fantastic. So happy we signed up!
-  author: Laurie Jodziewicz
-  source: 4p customer
+testimonials:
+  - quote: >-
+      A fantastic CSA with a great mix of interesting veggies along with regular
+      staples. Great quality and value! Plus they suggest recipes every week for
+      the shares delivered. The ability to pause a delivery if you're traveling is
+      fantastic. So happy we signed up!
+    author: Laurie Jodziewicz
+    source: 4p customer
+  - quote: >-
+      ABLHA BLAH
+    author: Laurie Jodziewicz
+    source: 4p customer
 calendly_url:
 primary_cta: signup
 ---
@@ -74,11 +78,7 @@ primary_cta: signup
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-around align-items-center">
-      <div class="m-0"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid" /></div>
-      <div class="m-0"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid" /></div>
-      <div class="m-0"><img src="{{ site.placeholder_image }}" alt="" class="img-fluid" /></div>
-    </div>
+    {% include target/feed.html %}
 
   </div>
 </section>
