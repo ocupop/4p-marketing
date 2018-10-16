@@ -6,6 +6,41 @@
   background-position: center center;
   background-image: url('/assets/img/bg-illustrations.png');
   @include media-breakpoint-down(sm) {
-    background-image: none;
+    padding-bottom: 25%;
+    background-size: 100%;
+    background-position: bottom center;
+    background-image: url('/assets/img/bg-illustrations-mobile.png');
+  }
+}
+
+#logo-pile {
+  display: block;
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  &.combo-logos {
+    padding-top: 20%;
+    background-image: url('/assets/img/combo-logos.jpg');
+    @include media-breakpoint-down(sm) {
+      padding-top: 85%;
+      background-image: url('/assets/img/combo-logos-mobile.jpg');
+    }  
+  }
+  &.residential-logos {
+    padding-top: 20%;
+    background-image: url('/assets/img/residential-logos.jpg');
+    @include media-breakpoint-down(sm) {
+      padding-top: 50%;
+      background-image: url('/assets/img/residential-logos-mobile.jpg');
+    }  
+  }
+  &.company-logos {
+    padding-top: 20%;
+    background-image: url('/assets/img/company-logos.jpg');
+    @include media-breakpoint-down(sm) {
+      padding-top: 80%;
+      background-image: url('/assets/img/company-logos-mobile.jpg');
+    }  
   }
 }
