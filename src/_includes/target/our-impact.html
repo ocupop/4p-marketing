@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
       <div class="col-12 text-center">
         <div class="card-deck">
-          <div class="card">
+          <div class="card m-lg-3 p-lg-5">
             <img class="rounded-circle img-fluid" src="/assets/img/impact-farmer.jpg" alt="Alternate" />
             <div class="card-body">
               <h5 class="card-title editable">Local farmers</h5>
@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card m-lg-3 p-lg-5">
             <img class="rounded-circle img-fluid" src="/assets/img/impact-communities.jpg" alt="Alternate" />
             <div class="card-body">
               <h5 class="card-title editable">Low&#8209;access communities</h5>
@@ -29,7 +29,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card m-lg-3 p-lg-5">
             <img class="rounded-circle img-fluid" src="/assets/img/impact-environment.jpg" alt="Alternate" />
             <div class="card-body">
               <h5 class="card-title editable">The environment</h5>
@@ -39,6 +39,9 @@
             </div>
           </div>
         </div>
+        {% if page.primary_cta == "signup" %}
+          <a href="{{ site.signup_url }}" class="btn btn-info mt-5">Sign-up</a>
+        {% endif %}
       </div>
     </div>
   </div>
