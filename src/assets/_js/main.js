@@ -22,3 +22,13 @@ $("a[href*='#']:not([href='#']):not('.carousel-control-next'):not('.carousel-con
     }
   }
 });
+
+  //Video modal
+  $('.container-video').click(function () {
+    var src = $(this).data('src');
+    $(this).find('iframe').attr('src', src).css({
+      'opacity': 1,
+      'pointer-events': 'all'
+    });
+    
+  });
