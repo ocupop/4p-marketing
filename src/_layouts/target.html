@@ -9,8 +9,9 @@ layout: default
 
 {% contentblock target_scoop %}
 
-{% include target/feed.html %}
-
+{% if page.primary_cta != 'signup' %}
+  {% include target/feed.html %}
+{% endif %}
 {% include target/testimonial.html %}
 
 {% contentblock target_credibility %}
