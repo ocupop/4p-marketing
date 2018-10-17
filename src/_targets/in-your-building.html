@@ -37,6 +37,54 @@ calendly_url: 'https://calendly.com/ocupop/meet-n-greet'
 </section>
 {% endcontentfor %}
 
+{% contentfor target_howitworks no-convert %}
+<section id="how-it-works" class="text-center">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-4">
+        <div class="m-3 arrow arrow-right">
+          <img src="/assets/img/orders.svg" alt="" class="img-fluid mx-4 editable" />
+          <h3 class="mt-3 editable">Custom Order Options</h3>
+          <p class="editable">
+            Produce, dairy, or meat? Feeding a family of 6 or cooking for one? We have the right delivery for every employee.
+          </p>    
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="m-3 arrow arrow-right">
+          <img src="/assets/img/dropoff.svg" alt="" class="img-fluid mx-4 editable" />
+          <h3 class="mt-3 editable">Convenient drop&#8209;off location</h3>
+          <p class="editable">
+            By scheduling 4P's delivery drop-off right to your door, you&rsquo;ll save your employees both money and time.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="m-3">
+          <img src="/assets/img/food.svg" alt="" class="img-fluid mx-4 editable" />
+          <h3 class="mt-3 editable">Farm&#8209;fresh, seasonal food with purpose</h3>
+          <p class="editable">
+            We work with more than 200 farmers for the best quality and variety. And the more we grow, the more we <a href="#our-impact" title="Our Impact">give</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <hr />
+        {% if page.primary_cta == "signup" %}
+        <a href="{{ site.signup_url }}" class="btn btn-info mb-5">Sign-up</a>
+        {% endif %}
+        <p class="lead text-muted editable">
+          Want to learn more about how 4P works?<br />Watch our <a href="#video">video</a> to get the story
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcontentfor %}
+
 
 {% contentfor target_scoop no-convert %}
 <section id="scoop" class="bg-cream text-center">
