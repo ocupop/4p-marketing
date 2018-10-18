@@ -21,12 +21,23 @@
 }
 
 #primarynav {
+
   .nav-link {
     text-transform: uppercase;
-    margin: 0 20px;
+    margin: 0;
     font-family: $headings-font-family;
+    padding:20px;
+    border-bottom:1px solid $gray-300;
+    @include media-breakpoint-up(md) {
+      border-bottom: 0 !important;
+    }
   }
+
   .btn {
     font-size: 16px;
+    margin-bottom:30px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0 !important;
+    }
   }
 }
