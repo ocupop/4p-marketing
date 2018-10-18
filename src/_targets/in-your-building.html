@@ -1,6 +1,7 @@
 ---
 layout: target
 name: In Your Building
+calendly_url: 'https://calendly.com/ocupop/meet-n-greet'
 testimonials:
   - quote: >-
       A fantastic CSA with a great mix of interesting veggies along with regular
@@ -15,7 +16,7 @@ testimonials:
       Excellent customer service too!
     author: Penelope
     source: 4P Customer
-calendly_url: 'https://calendly.com/ocupop/meet-n-greet'
+
 ---
 
 {% contentfor target_overview no-convert %}
@@ -135,14 +136,12 @@ calendly_url: 'https://calendly.com/ocupop/meet-n-greet'
         </div>
       </div>
     </div>
-    {% if target.calendly_url %}
     <div class="row justify-content-center">
       <div class="col-12 text-center p-0">
         <div class="calendly-inline-widget" data-url="{{ page.calendly_url }}" style="min-width:320px;height:580px;filter: hue-rotate(260deg) saturate(1);"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </div>
     </div>
-    {% endif %}
   </div>
 </section>
 {% endcontentfor %}
