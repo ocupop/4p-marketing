@@ -1,7 +1,7 @@
 # Site settings
 title: 4pFoods
 email: dev@ocupop.com
-url: "http://client_url.com"
+url: "http://try4pfoods.com"
 permalink: /:title
 
 root_url: https://4pfoods.com
