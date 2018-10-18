@@ -10,16 +10,16 @@
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="nav navbar-nav mx-auto border-top">
-          <li class="nav-item"><a href="#how-it-works" class="nav-link">How it works</a></li>
-          <li class="nav-item"><a href="#our-impact" class="nav-link">Our Impact</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link" onClick="ga('send', 'event', 'navlink', 'How It Works', '{{ target.name }}');">How it works</a></li>
+          <li class="nav-item"><a href="#our-impact" class="nav-link" onClick="ga('send', 'event', 'navlink', 'Our Impact', '{{ target.name }}');">Our Impact</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" onClick="ga('send', 'event', 'navlink', 'Contact', '{{ target.name }}');">Contact</a></li>
         </ul>
         <ul class="navbar-nav float-md-right mt-4 mt-md-0">
           <li class="nav-item">
             {% if page.primary_cta == "signup" %}
-              <a href="{{ site.signup_url }}" class="btn btn-primary">Sign-up</a>
+              <a href="{{ site.signup_url }}" class="btn btn-primary" onClick="ga('send', 'event', 'navlink', 'Sign Up', '{{ target.name }}');">Sign-up</a>
             {% else %}
-              <a href="#next-step" class="btn btn-primary">Get Started</a>
+              <a href="#next-step" class="btn btn-primary" onClick="ga('send', 'event', 'navlink', 'Get Started', '{{ target.name }}');">Get Started</a>
             {% endif %}
           </li>
         </ul>
