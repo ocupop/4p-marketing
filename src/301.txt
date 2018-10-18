@@ -1,1 +1,1 @@
-/ https://try4pfoods.com/at-home
+/index.html https://try4pfoods.com/at-home
