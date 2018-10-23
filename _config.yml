@@ -4,6 +4,7 @@ email: dev@ocupop.com
 url: "http://try4pfoods.com"
 permalink: /:title
 
+
 root_url: https://4pfoods.com
 signup_url: http://4pfoods.com/get-a-bag/
 contact_url: http://4pfoods.com/contact/
@@ -17,8 +18,8 @@ socialshare:
     image:
 
 # Google Analytics
-analytics_code: '127755766'
-
+analytics_code: 'UA-127755766-1'
+gtitle: /:title
 
 # Collections
 collections:
