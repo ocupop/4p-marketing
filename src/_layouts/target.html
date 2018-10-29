@@ -1,6 +1,11 @@
 ---
-layout: default
+layout: defaultstripped
 ---
+
+<body class="{{ page.layout }}"></body>
+{% include header.html %}
+<main id="page-content">
+
 {% assign target = page %}
 
 {% contentblock target_overview %}
@@ -12,6 +17,7 @@ layout: default
 {% if page.primary_cta != 'signup' %}
   {% include target/feed.html %}
 {% endif %}
+
 {% include target/testimonial.html %}
 
 {% contentblock target_credibility %}
@@ -23,3 +29,8 @@ layout: default
 {% include target/hook.html %}
 
 {% contentblock target_next_step %}
+
+</main>
+{% include footer.html %}
+{% include scripts.html %}
+</body>

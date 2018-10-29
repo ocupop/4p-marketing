@@ -19,7 +19,6 @@ socialshare:
 
 # Google Analytics
 analytics_code: 'UA-127755766-1'
-gtitle: /:title
 
 # Collections
 collections:

@@ -11,15 +11,15 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-4">
-          <a href="{{ site.root_url }}" title="Visit the 4pFoods Website" class="btn btn-info btn-block mb-3">See our website</a>
+          <a href="{{ site.root_url }}" title="Visit the 4pFoods Website" class="btn btn-info btn-block mb-3" onClick="ga('send', 'event', 'button', 'See Our Website', '{{ page.title }}');">See our website</a>
         </div>
         <div class="col-12 col-md-4">
-          <a href="{{ site.root_url }}/contact" title="Contact 4pFoods" class="btn btn-info btn-block mb-3">Contact Us</a>
+          <a href="{{ site.root_url }}/contact" title="Contact 4pFoods" class="btn btn-info btn-block mb-3" onClick="ga('send', 'event', 'button', 'Contact Us', '{{ page.title }}');">Contact Us</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-primary bg-image" style="background-image:url(/assets/img/bg-footer.jpg);">
+  <section class="bg-primary bg-image" style="background-image:url(/assets/img/bg-footer.jpg);" onClick="ga('send', 'event', 'imagelink', '4P Logo', '{{ page.title }}');">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
