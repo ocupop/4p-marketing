@@ -1,11 +1,6 @@
 ---
-layout: defaultstripped
+layout: default
 ---
-
-<body class="{{ page.layout }}"></body>
-{% include header.html %}
-<main id="page-content">
-
 {% assign target = page %}
 
 {% contentblock target_overview %}
@@ -29,8 +24,3 @@ layout: defaultstripped
 {% include target/hook.html %}
 
 {% contentblock target_next_step %}
-
-</main>
-{% include footer.html %}
-{% include scripts.html %}
-</body>
