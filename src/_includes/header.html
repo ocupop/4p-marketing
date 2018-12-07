@@ -18,7 +18,7 @@
         <ul class="navbar-nav float-md-right mt-4 mt-md-0">
           <li class="nav-item">
             {% if page.primary_cta == "signup" %}
-              <a href="{{ site.signup_url }}" class="btn btn-primary" onClick="ga('send', 'event', 'navlink', 'Sign Up', '{{ page.title }}');">Sign-up</a>
+              <a href="{{ site.signup_url }}" class="btn btn-primary" onClick="ga('send', 'event', 'navlink', 'Sign Up', '{{ page.title }}');">Sign up</a>
             {% else %}
               <a href="#next-step" class="btn btn-primary" onClick="ga('send', 'event', 'navlink', 'Get Started', '{{ page.title }}');">Get Started</a>
             {% endif %}
