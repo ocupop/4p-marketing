@@ -1,7 +1,7 @@
 {
-  "name": "website-project-template",
+  "name": "4p-marketing",
   "version": "0.2.0",
-  "description": "Project description...",
+  "description": "Marketing Pages for the try4pfoods.com website",
   "private": true,
   "repository": {
     "type": "git",
