@@ -1,0 +1,21 @@
+---
+layout: none
+---
+[
+  {% for section in site.data.presentation %}
+  {
+    "label": "{{ section.label }}",
+    "anchor": "{{ section.label | slugify }}",
+    "slides": [
+      {% for object in section.slides %}
+      {% assign slide = site.slides | where: 'slug', object | first %}
+      {
+        "slug": "{{ slide.slug }}",
+        "label": "{{ slide.title }}",
+        "htmlContent": "{{ slide.content | strip_newlines | replace: '"', '\"' }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

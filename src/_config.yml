@@ -2,7 +2,7 @@
 title: 4pFoods
 email: dev@ocupop.com
 url: "http://try4pfoods.com"
-permalink: /:title
+permalink: pretty
 
 
 root_url: https://4pfoods.com
@@ -18,14 +18,20 @@ socialshare:
     image:
 
 # Google Analytics
-analytics_code: 'UA-127755766-1'
+analytics:
+  default: 'UA-127755766-1'
+  presentation: 'UA-127755766-2'
 
 # Collections
 collections:
   targets:
     output: true
     layout: default
-    permalink: /:title
+    permalink: /:title/
+  slides:
+    output: true
+    layout: default
+    permalink: /slides/:path
 
 # Build settings
 safe: false

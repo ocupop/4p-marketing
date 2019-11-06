@@ -1,0 +1,13 @@
+<nav class="presentationNav showNav">
+  <ul>
+    <li class="brand"><img class="img-fluid" src="/img/presentation/4P-logomark.svg" alt="4pFoods" /></li>
+    {% for section in site.data.presentation %}
+    <li>
+      <a href="#{{ section.label | slugify }}">
+        {{ section.label }}
+        <span class="indicator"></span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

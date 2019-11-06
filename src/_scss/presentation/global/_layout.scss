@@ -1,0 +1,41 @@
+body {
+  &.slide {
+    padding-top: 80px;
+  }
+}
+#pageHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 0 2px rgba($black, 0.3);
+  @include transition(1s);
+  @include media-breakpoint-down(sm) {
+    position: relative;
+  }
+}
+
+#pageContent {
+  min-height: calc(100vh - 115px);
+  overflow: hidden;
+}
+
+#pageFooter {
+  color: darken($secondary, 30%);
+  box-shadow: 0 0 2px rgba($black, 0.3);
+}
+
+.callout-up {
+  padding: 20px;
+  background-color: $dark-tan;
+  border-radius: 5px;
+  margin-top: -20px;
+}
+
+.callout-down {
+  padding: 20px;
+  background-color: $dark-tan;
+  border-radius: 5px;
+  margin-top: 20px;
+}

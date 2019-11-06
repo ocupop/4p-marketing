@@ -1,0 +1,43 @@
+.scrollable-content {
+  width: 100%;
+  height: auto;
+  background-color: $dark-tan;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.time-card {
+  height: auto;
+  width: 300px;
+  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
+}
+
+.team-member {
+  // width: 250px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $light-grey;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $light-grey;
+}

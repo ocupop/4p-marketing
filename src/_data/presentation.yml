@@ -1,0 +1,46 @@
+- label: Welcome
+  slides:
+    - welcome
+- label: The Problem
+  slides:
+    - the-problem
+- label: The Solution
+  slides:
+    - the-solution/solution
+    - the-solution/aligning-for-good
+    - the-solution/area-served
+    - the-solution/a-benefit-corp
+    - the-solution/in-action
+- label: Business Model
+  slides:
+- label: Competition
+  slides:
+- label: Good Food Supply Chain
+  slides:
+    - good-food-supply-chain/supply-chain
+    - good-food-supply-chain/tech-platform
+    - good-food-supply-chain/infrastructure
+- label: Impact Overview
+  slides:
+    - impact-overview/the-impact-overview
+    - impact-overview/food-access
+    - impact-overview/food-is-medicine
+    - impact-overview/impact-to-farmers
+    - impact-overview/farmer-profiles
+- label: Milestones
+  slides:
+- label: Our Team
+  slides:
+    - our-team/our-team
+    - our-team/advisory-board
+    - our-team/current-funders
+- label: Financing
+  slides:
+    - the-financing/financing-history
+    - the-financing/monthly-sales-growth
+    - the-financing/growth-projections
+    - the-future/our-vision
+- label: Where We're Going
+  slides:
+- label: Thank You
+  slides:

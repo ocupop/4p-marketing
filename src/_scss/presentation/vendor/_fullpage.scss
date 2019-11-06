@@ -1,0 +1,49 @@
+.fp-enabled {
+  #pageHeader {
+    left: calc(100vw - 80px);
+    &.active {
+      left: 0;
+    }
+  }
+}
+
+.fp-slidesNav {
+  &.fp-bottom {
+    text-align: center;
+  }
+}
+
+.fp-tableCell {
+  width: calc(100vw - 320px) !important;
+  @include transition(0.5s);
+}
+
+#fp-nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 40px;
+  height: 100vh;
+  background-color: $dark-green;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  ul {
+    li {
+      a {
+        span {
+          background-color: rgba($white, 0.5) !important;
+        }
+        &.active {
+          span {
+            background-color: rgba($white, 1) !important;
+          }
+        }
+      }
+    }
+  }
+}

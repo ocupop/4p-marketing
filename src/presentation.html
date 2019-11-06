@@ -1,0 +1,56 @@
+---
+layout: presentation
+title: 4pFoods Interactive Pitch Deck
+---
+<div id="fullpage">
+  {% for section in site.data.presentation %}
+  <section id="{{ section.label | slugify }}" class="section">
+    {% for object in section.slides %}
+    {% assign slide = site.slides | where: 'slug', object | first %}
+    {% if section.slides.size <= 1 %}
+    {{ slide.content }}
+    {% else %}
+    <div id="#{{ section.label | slugify }}/{{slide.slug}}" data-anchor="{{slide.slug}}" class="slide">
+      {{ slide.content }}
+    </div>
+    <div class="container slideNav">
+      <nav class="bg-tan navbar navbar-expand-md navbar-light">
+        <ul class="mx-auto w-100 justify-content-around navbar-nav">
+          {% for object in section.slides %}
+          {% assign slide = site.slides | where: 'slug', object | first %}
+          <li data-menuanchor="{{ slide.slug }}" class="nav-item">
+            <a href="#{{ section.label | slugify }}/{{ slide.slug }}" class="nav-link">{{ slide.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endfor %}
+</div>
+
+<script>
+  const anchors = [{% for section in site.data.presentation %}"{{ section.label | slugify }}"{% unless forloop.last %}, {% endunless %} {% endfor %}]
+  // new fullpage("#fullpage", {
+  //   licenseKey: 'B195D204-977A477D-89A01D56-A41865AC',
+  //   scrollHorizontallyKey: 'Y2xvdWR2ZW50Lm5ldF9iR1VjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVkakE=',
+  //   scrollHorizontally: false,
+  //   controlArrows: false,
+
+  //   scrollOverflowResetKey: 'Y2xvdWR2ZW50Lm5ldF82dDNjMk55YjJ4c1QzWmxjbVpzYjNkU1pYTmxkQT09T2pF',
+  //   scrollOverflowReset: true,
+  //   scrollOverflow: true,
+
+  //   easingcss3: "cubic-bezier(1, 0, 0, 1)",
+  //   scrollingSpeed: 1000,
+  //   menu: "#presentationNav",
+  //   lockAnchors: false,
+  //   autoScrolling: true,
+  //   anchors: anchors,
+  //   navigation: true,
+  //   navigationPosition: "left",
+  //   normalScrollElements: ".scrollable-content",
+  // });
+</script>
