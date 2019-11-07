@@ -18,18 +18,15 @@ a {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-size: 2.5rem;
-  @include media-breakpoint-down(sm) {
-    font-size: 1.75rem;
-  }
+
+em {
+  font-family: $font-family-secondary;
 }
+
 .lead {
   font-family: $font-family-base;
   font-size: 1.5rem;

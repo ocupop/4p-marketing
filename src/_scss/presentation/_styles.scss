@@ -135,18 +135,13 @@
   }
 
   .slideNav {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    z-index: 9;
-    border-radius: 50px;
     @include transition(1s);
     .navbar-light {
       .navbar-nav {
         .nav-link {
           font-size: 0.8rem;
           font-weight: 700;
-          color: $dark-green;
+          color: $white;
           opacity: 0.6;
           @include transition();
           &:hover {

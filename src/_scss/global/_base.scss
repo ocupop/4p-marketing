@@ -40,10 +40,6 @@ blockquote {
   }
 }
 
-address {
-  font-family: $font-family-secondary;
-}
-
 dl {
   dd,
   dt {
@@ -52,6 +48,3 @@ dl {
   }
 }
 
-hr {
-  border: 1px solid $light-green;
-}

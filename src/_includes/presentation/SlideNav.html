@@ -1,10 +1,15 @@
 <div class="container slideNav">
-  <nav class="bg-tan navbar navbar-expand-md navbar-light">
+  <nav class="bg-green text-white navbar navbar-expand-md navbar-light">
     <ul class="mx-auto w-100 justify-content-around navbar-nav">
       {% for object in section.slides %}
-      {% assign slide = site.slides | where: 'slug', object | first %}
+          {% for s in site.slides %}
+          {% assign match = s.path | replace: '_slides/', '' | replace: '.html', '' %}
+          {% if object == match %}
+          {% assign slide = s %}
+          {% endif %}
+          {% endfor %}
       <li data-menuanchor="{{ slide.slug }}" class="nav-item">
-        <a href="#{{ section.label | slugify }}/{{ slide.slug }}" class="nav-link">{{ slide.title }}</a>
+        <a href="#{{ section.label | slugify }}/{{ slide.slug }}" class="nav-link text-white">{{ slide.title }}</a>
       </li>
       {% endfor %}
     </ul>
