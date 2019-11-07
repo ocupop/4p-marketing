@@ -33,8 +33,11 @@ h2,
 
 h3,
 .h3 {
-  font-weight: 300;
+  font-weight: 700;
+  font-family: $font-family-secondary;
+  font-style: italic;
   color: $light-green;
+  text-transform: none;
   @include media-breakpoint-down(md) {
     // font-size: 1.2rem;
   }
