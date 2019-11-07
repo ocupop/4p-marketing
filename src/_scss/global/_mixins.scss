@@ -9,11 +9,7 @@
   animation-delay: ($delay);
 }
 
-@mixin make-responsive-cards(
-  $columns: $grid-columns,
-  $gutter: $grid-gutter-width,
-  $breakpoints: $grid-breakpoints
-) {
+@mixin make-responsive-cards($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   // Common properties for all breakpoints
   display: flex;
   flex-flow: row wrap;

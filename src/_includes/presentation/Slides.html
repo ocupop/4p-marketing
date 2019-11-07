@@ -1,0 +1,30 @@
+{% if section.slides.size == 1 %}
+  <!-- There is only one slide -->
+  {% for object in section.slides %}
+    {% for s in site.slides %}
+      {% assign match = s.path | replace: '_slides/', '' | replace: '.html', '' %}
+      {% if object == match %}
+        {% assign slide = s %}
+      {% endif %}
+    {% endfor %}
+    {{ slide.content }}
+  {% endfor %}
+
+{% else %}
+  <!-- There are multiple slides in this section -->
+
+  {% for object in section.slides %}
+    {% for s in site.slides %}
+      {% assign match = s.path | replace: '_slides/', '' | replace: '.html', '' %}
+      {% if object == match %}
+        {% assign slide = s %}
+      {% endif %}
+    {% endfor %}
+
+    <div id="#{{ section.label | slugify }}/{{slide.slug}}" data-anchor="{{slide.slug}}" class="slide">
+      {{ slide.content }}
+    </div>
+
+  {% endfor %}
+  <h3>Add Slide Nav</h3>
+{% endif %}

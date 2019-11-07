@@ -2,33 +2,27 @@
 layout: presentation
 title: 4pFoods Interactive Pitch Deck
 ---
-<div id="fullpage">
-  {% for section in site.data.presentation %}
-  <section id="{{ section.label | slugify }}" class="section">
-    {% for object in section.slides %}
-    {% assign slide = site.slides | where: 'slug', object | first %}
-    {% if section.slides.size <= 1 %}
-    {{ slide.content }}
-    {% else %}
-    <div id="#{{ section.label | slugify }}/{{slide.slug}}" data-anchor="{{slide.slug}}" class="slide">
-      {{ slide.content }}
-    </div>
-    <div class="container slideNav">
-      <nav class="bg-tan navbar navbar-expand-md navbar-light">
-        <ul class="mx-auto w-100 justify-content-around navbar-nav">
-          {% for object in section.slides %}
-          {% assign slide = site.slides | where: 'slug', object | first %}
-          <li data-menuanchor="{{ slide.slug }}" class="nav-item">
-            <a href="#{{ section.label | slugify }}/{{ slide.slug }}" class="nav-link">{{ slide.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-    {% endif %}
+
+<div class="presentation-wrapper">
+  <div id="fullpage">
+    {% for section in site.data.presentation %}
+      <section class="bg-tan">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>
+                <strong>Label:</strong> {{ section.label }}<br/>
+                <strong>Slide Count:</strong> {{ section.slides.size }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="{{ section.label | slugify }}" class="section">
+        {% include presentation/slides.html %}
+      </section>
     {% endfor %}
-  </section>
-  {% endfor %}
+  </div>
 </div>
 
 <script>

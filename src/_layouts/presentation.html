@@ -22,6 +22,7 @@
   <link href="https://cdn.remixicon.com/releases/v1.2.2/remixicon.css" rel="stylesheet">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ '/css/presentation.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
 
@@ -31,14 +32,9 @@
 
 
   <body>
+
     <main id="pageContent">
-      <div class="presentation-wrapper nav-show">
-
-        {% include presentation/PresentationNav.html %}
-
-        {{ content }}
-
-      </div>
+      {{ content }}
     </main>
     {% include presentation/scripts.html %}
   </body>

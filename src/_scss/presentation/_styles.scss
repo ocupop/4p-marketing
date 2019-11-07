@@ -1,7 +1,12 @@
 .presentation-wrapper {
+  background-color: $light-tan;
   .section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    .container {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   .slide {
@@ -120,7 +125,7 @@
     &.collapsed {
       width: 40px;
       text-align: center;
-      // background-color: $green-dark;
+      // background-color: $dark-green;
     }
   }
 
@@ -204,9 +209,86 @@
       padding: 0 75px !important;
     }
   }
+
   @include media-breakpoint-down(md) {
     .container {
       padding: 0 50px !important;
     }
   }
+}
+
+// Individual Elements
+.callout-up {
+  padding: 20px;
+  background-color: $dark-tan;
+  border-radius: 5px;
+  margin-top: -20px;
+}
+
+.callout-down {
+  padding: 20px;
+  background-color: $dark-tan;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+// Milestones
+.dark-green-bg {
+  background-color: $dark-green;
+}
+
+.grey-bg {
+  background-color: $dark-grey;
+}
+
+#milestone-timeline {
+  width: 3060px;
+  height: auto;
+}
+
+#farmers-timeline {
+  width: 1700px;
+  height: auto;
+}
+
+.profile-pic {
+  max-width: 200px;
+}
+
+#team-timeline {
+  width: 1285px;
+  height: auto;
+}
+
+.fp-enabled .modal {
+  position: fixed !important;
+  z-index: 99999;
+}
+
+#tech-platform-timeline {
+  width: 2040px;
+  height: auto;
+}
+
+.dot {
+  margin-top: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: $light-green;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.blue-bg {
+  background-color: $light-blue;
 }

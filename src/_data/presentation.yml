@@ -13,27 +13,32 @@
     - the-solution/in-action
 - label: Business Model
   slides:
+    - the-business-model
+- label: The Market
+  slides:
+    - the-market
 - label: Competition
   slides:
+    - the-competition
 - label: Good Food Supply Chain
   slides:
-    - good-food-supply-chain/supply-chain
-    - good-food-supply-chain/tech-platform
-    - good-food-supply-chain/infrastructure
+    - the-good-food-supply-chain/supply-chain
+    - the-good-food-supply-chain/tech-platform
+    - the-good-food-supply-chain/infrastructure
 - label: Impact Overview
   slides:
-    - impact-overview/the-impact-overview
-    - impact-overview/food-access
-    - impact-overview/food-is-medicine
-    - impact-overview/impact-to-farmers
-    - impact-overview/farmer-profiles
+    - the-impact/the-impact-overview
+    - the-impact/food-access
+    - the-impact/food-is-medicine
+    - the-impact/impact-to-farmers
+    - the-impact/farmer-profiles
 - label: Milestones
-  slides:
+  slides: milestones
 - label: Our Team
   slides:
-    - our-team/our-team
-    - our-team/advisory-board
-    - our-team/current-funders
+    - the-team/our-team
+    - the-team/advisory-board
+    - the-team/current-funders
 - label: Financing
   slides:
     - the-financing/financing-history
@@ -42,5 +47,8 @@
     - the-future/our-vision
 - label: Where We're Going
   slides:
+    - the-future/future-projections
+    - the-future/our-vision
 - label: Thank You
   slides:
+    - thank-you

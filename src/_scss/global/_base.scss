@@ -40,7 +40,18 @@ blockquote {
   }
 }
 
-.container {
-  padding-right: 30px;
-  padding-left: 30px;
+address {
+  font-family: $font-family-secondary;
+}
+
+dl {
+  dd,
+  dt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+hr {
+  border: 1px solid $light-green;
 }
