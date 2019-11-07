@@ -124,10 +124,6 @@
   overflow: hidden !important;
 }
 
-.responsive-card-deck {
-  @include make-responsive-cards();
-}
-
 .container-map {
   height: 0;
   padding-top: 40%;

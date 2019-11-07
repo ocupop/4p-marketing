@@ -52,8 +52,10 @@ $theme-colors: (
   "light": $gray-300,
   "dark": $gray-800,
   "dark-green": $dark-green,
+  "light-green": $light-green,
   "tan": $tan,
   "dark-tan": $dark-tan,
+  "light-tan": $light-tan,
   "notice": $teal,
   "green": $green
 );
@@ -84,7 +86,7 @@ $h6-font-size: 1rem;
 
 $headings-font-family: inherit;
 $headings-font-weight: 400;
-$headings-line-height: 1.5rem;
+$headings-line-height: 1;
 $headings-color: inherit;
 
 $border-radius: 0;

@@ -30,12 +30,6 @@ h2 {
     font-size: 1.75rem;
   }
 }
-h2 {
-  font-size: 2.5rem;
-  @include media-breakpoint-down(sm) {
-    font-size: 1.75rem;
-  }
-}
 .lead {
   font-family: $font-family-base;
   font-size: 1.5rem;

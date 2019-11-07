@@ -3,6 +3,7 @@
   .section {
     width: 100vw;
     min-height: 100vh;
+    background-color: $dark-tan;
     .container {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -11,8 +12,12 @@
 
   .slide {
     width: 100vw;
-    height: 100vh;
-    background-color: darken;
+    min-height: 100vh;
+    background-color: $dark-tan;
+    .container {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   section,
