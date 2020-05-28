@@ -1,0 +1,45 @@
+.cognito {
+  .c-forms-form {
+    .c-label {
+      display: none;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border-radius: 0;
+      border: 1px solid $gray-400;
+    }
+    .c-choice-radiobuttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .c-label {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .c-editor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .c-choice-option {
+      input {
+        margin-right: 5px;
+      }
+    }
+  }
+  .c-button-section {
+    .c-action {
+      float: none;
+    }
+    #c-submit-button {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+      float: none;
+    }
+  }
+}
