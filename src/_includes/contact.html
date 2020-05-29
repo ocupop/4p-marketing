@@ -12,7 +12,9 @@
       <div class="col-12 col-md-8">
         <div class="cognito">
           <script src="https://www.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
-          <script>Cognito.load("forms", { id: "76" });</script>
+          <script>Cognito.load("forms", { id: "76" });
+            Cognito.prefill({ "Website": "{{ page.url | prepend: site.url }}" });
+          </script>
           <div class="preloader"></div>
         </div>
       </div>
