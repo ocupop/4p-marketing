@@ -147,7 +147,7 @@ primary_cta: signup
 {% endcontentfor %}
 
 {% contentfor target_credibility no-convert %}
-<section id="credibility" class="text-center">
+{% comment %}<section id="credibility" class="text-center">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
@@ -162,7 +162,7 @@ primary_cta: signup
     {% include target/feed.html %}
 
   </div>
-</section>
+</section>{% endcomment %}
 {% endcontentfor %}
 
 {% contentfor target_next_step no-convert %}
